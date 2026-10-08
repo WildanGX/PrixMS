@@ -1,0 +1,57 @@
+# ==========================================
+# RUST & CARGO
+# ==========================================
+# Folder hasil kompilasi binary (ukurannya bisa ber-GB-GB, wajib ignore)
+/target/
+
+# Cargo lockfile internal development jika library (opsional, tapi untuk aplikasi/binary aman di-commit)
+# Kita simpan Cargo.lock biar versi dependency terkunci rapat.
+
+# Backup file dari Cargo/rustfmt
+**/*.rs.bk
+*.bk
+
+# ==========================================
+# MINECRAFT SERVER RUNTIME & DATA
+# ==========================================
+# Data dunia Minecraft, region Anvil, & playerdata (biar repo gak berat)
+/world/
+/world_nether/
+/world_the_end/
+*.mca
+*.dat
+
+# File runtime server & log
+/logs/
+/crash-reports/
+*.log
+
+# Cache & temporary files
+/cache/
+/.prixms/
+
+# ==========================================
+# OS & EDITOR FILES
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code & JetBrains IDE (CLion / RustRover)
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.iml
+
+# Environment / Secret keys (jika nanti ada token webhook/API)
+.env
+*.env
