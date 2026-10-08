@@ -34,5 +34,5 @@ PrixMS is architected independently by **Wildan** (*Architect & Lead Developer*)
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/USERNAME/PrixMS.git](https://github.com/USERNAME/PrixMS.git)
+   git clone https://github.com/WildanGX/PrixMS.git
    cd PrixMS
